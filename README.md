@@ -77,12 +77,8 @@ DB_PASSWORD=secret
 php artisan key:generate
 ```
 
-### 6. Миграции и сиды (создание таблиц и тестовых данных)
+### 6. Миграции и сиды (создание таблиц и немного тестовых данных для наглядности)
 ```
-php artisan migrate
-# если у вас есть сидеры:
-php artisan db:seed
-# или одновременно:
 php artisan migrate --seed
 ```
 
