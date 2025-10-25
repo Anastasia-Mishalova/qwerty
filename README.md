@@ -38,6 +38,12 @@
 
 ---
 
+## Админская часть
+
+http://127.0.0.1:8000/admin/home
+
+---
+
 ## Установка и запуск проекта (локально)
 
 ### 1. Клонировать репозиторий
@@ -57,7 +63,7 @@ composer install
 cp .env.example .env
 ```
 
-Обязательные переменные в .env (пример):
+Измените в .env данные на эти и подставьте название своей БД, имя вашего аккаунта и пароль:
 ```
 APP_NAME=Laravel
 APP_ENV=local
@@ -67,8 +73,8 @@ APP_URL=http://localhost
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=auction
-DB_USERNAME=root
+DB_DATABASE=auction    #название бд
+DB_USERNAME=root       #имя пользователя бд
 DB_PASSWORD=''         #пароль пользователя бд
 ```
 
@@ -82,8 +88,7 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 
-### 8. Символическая ссылка для публичных файлов (опционально)
-Если проект использует загрузку файлов:
+### 8. Символическая ссылка для публичных файлов
 ```
 php artisan storage:link
 ```
