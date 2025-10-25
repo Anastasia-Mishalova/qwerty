@@ -59,17 +59,17 @@ cp .env.example .env
 
 Обязательные переменные в .env (пример):
 ```
-APP_NAME=Eisgrau
+APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=         # будет сгенерирован командой ниже
-APP_URL=http://localhost:8000
+APP_KEY=         # будет сгенерирован чуть дальше
+APP_URL=http://localhost
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=eisgrau_db
+DB_DATABASE=auction
 DB_USERNAME=root
-DB_PASSWORD=secret
+DB_PASSWORD='qwerty'
 ```
 
 ### 5. Генерация ключа приложения
